@@ -27,6 +27,7 @@ int _putchar(int c)
 	static int i;
 	static char buf[OUTPUT_BUF_SIZE];
 
+<<<<<<< HEAD:_putchar.c
 	if (c == BUF_FLUSH || i >= OUTPUT_BUF_SIZE)
 	{
 		write(1, buf, i);
@@ -35,4 +36,7 @@ int _putchar(int c)
 	if (c != BUF_FLUSH)
 		buf[i++] = c;
 	return (1);
+=======
+	*buff_ind = 0;
+>>>>>>> nice:_printf.c
 }
